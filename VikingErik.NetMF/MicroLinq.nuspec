@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>MicroLinq</id>
+    <version>0.4.0</version>
+    <title>MicroLinq: LINQ for .NET Micro Framework</title>
+    <authors>Erik Noren</authors>
+    <owners>Erik Noren</owners>
+    <description>
+      MicroLinq is an implementation of the basic LINQ extensions written specifically for embedded systems based on the .NET Micro Framework. The implementation focuses on efficient algorithms and a small footprint to be usable on as wide a selection of devices as possible.
+    </description>
+    <summary>A small implementation of LINQ on the .NET Micro Framework.</summary>
+    <language>en-US</language>
+    <licenseUrl>http://microlinq.codeplex.com/license</licenseUrl>
+    <projectUrl>http://microlinq.codeplex.com/</projectUrl>
+    <tags>netmf linq micro embedded</tags>
+  </metadata>
+  <files>
+    <file src="VikingErik.NetMF.MicroLinq\bin\Release\VikingErik.NetMF.MicroLinq.*" target="lib/netmf41/" />
+    <file src="VikingErik.NetMF.MicroLinq\bin\Release\le\VikingErik.NetMF.MicroLinq.p*" target="lib/netmf41/le/" />
+    <file src="VikingErik.NetMF.MicroLinq\bin\Release\be\VikingErik.NetMF.MicroLinq.p*" target="lib/netmf41/be/" />
+    <file src="VikingErik.NetMF.MicroLinq.PrebuiltDelegates\bin\Release\VikingErik.NetMF.MicroLinq.PrebuiltDelegates.*" target="lib/netmf41/" />
+    <file src="VikingErik.NetMF.MicroLinq.PrebuiltDelegates\bin\Release\le\VikingErik.NetMF.MicroLinq.PrebuiltDelegates.p*" target="lib/netmf41/le/" />
+    <file src="VikingErik.NetMF.MicroLinq.PrebuiltDelegates\bin\Release\be\VikingErik.NetMF.MicroLinq.PrebuiltDelegates.p*" target="lib/netmf41/be/" />
+  </files>
+</package>

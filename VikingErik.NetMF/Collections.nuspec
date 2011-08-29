@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package>
+  <metadata>
+    <id>NETMF_Collections</id>
+    <version>0.4.0</version>
+    <title>Supplemental Collections for .NET Micro Framework</title>
+    <authors>Erik Noren</authors>
+    <owners>Erik Noren</owners>
+    <description>
+      The .NET Micro Framework has a very small selection of rich storage types. This project provides additional collection types with different features.
+    </description>
+    <summary>Additional special-purpose collections for the .NET Micro Framework.</summary>
+    <language>en-US</language>
+    <licenseUrl>http://microlinq.codeplex.com/license</licenseUrl>
+    <projectUrl>http://microlinq.codeplex.com/</projectUrl>
+    <tags>netmf collections micro embedded</tags>
+  </metadata>
+  <files>
+    <file src="VikingErik.NetMF.Collections\bin\Release\VikingErik.NetMF.Collections.*" target="lib/netmf41/" />
+    <file src="VikingErik.NetMF.Collections\bin\Release\le\VikingErik.NetMF.Collections.p*" target="lib/netmf41/le/" />
+    <file src="VikingErik.NetMF.Collections\bin\Release\be\VikingErik.NetMF.Collections.p*" target="lib/netmf41/be/" />
+    </files>
+</package>
