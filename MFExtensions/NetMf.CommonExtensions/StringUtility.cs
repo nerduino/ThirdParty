@@ -22,14 +22,14 @@ namespace NetMf.CommonExtensions
     /// <summary>
     /// Provides additional standard string operations
     /// </summary>
-    public abstract class StringUtility
+    public static class StringUtility
     {
         /// <summary>
         /// Check if the provided string is either null or empty
         /// </summary>
         /// <param name="str">String to validate</param>
         /// <returns>True if the string is null or empty</returns>
-        public static bool IsNullOrEmpty(string str)
+        public static bool IsNullOrEmpty(this string str)
         {
             if (str == null || str == string.Empty)
                 return true;

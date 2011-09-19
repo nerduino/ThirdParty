@@ -56,6 +56,5 @@ namespace NetMf.CommonExtensions
 
         }
 
-       
     }
 }
