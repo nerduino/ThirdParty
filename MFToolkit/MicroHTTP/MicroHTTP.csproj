@@ -1,0 +1,141 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" ToolsVersion="4.0">
+  <PropertyGroup>
+    <AssemblyName>MicroHTTP</AssemblyName>
+    <OutputType>Library</OutputType>
+    <RootNamespace>MicroHTTP</RootNamespace>
+    <ProjectTypeGuids>{b69e3092-b931-443c-abe7-7e7b65f2a37f};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <ProductVersion>9.0.30729</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{1CC369CA-5686-445E-805A-B9B02578799F}</ProjectGuid>
+    <TargetFrameworkVersion>v4.1</TargetFrameworkVersion>
+    <NetMfTargetsBaseDir Condition="'$(NetMfTargetsBaseDir)'==''">$(MSBuildExtensionsPath32)\Microsoft\.NET Micro Framework\</NetMfTargetsBaseDir>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;MF,LOG,MF_FRAMEWORK_VERSION_V4_1</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE;MF</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <Import Project="$(NetMfTargetsBaseDir)$(TargetFrameworkVersion)\CSharp.Targets" />
+  <ItemGroup>
+    <Compile Include="..\HTTP\ClientConnectedEvent.cs">
+      <Link>ClientConnectedEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Collection\NameValueCollection.cs">
+      <Link>Collection\NameValueCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Collection\NameValueEnumerator.cs">
+      <Link>Collection\NameValueEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Collection\NameValuePair.cs">
+      <Link>Collection\NameValuePair.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Cookie\HttpCookie.cs">
+      <Link>Cookie\HttpCookie.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Cookie\HttpCookieCollection.cs">
+      <Link>Cookie\HttpCookieCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Cookie\HttpCookieEnumerator.cs">
+      <Link>Cookie\HttpCookieEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Enums\HttpStatusCode.cs">
+      <Link>Enums\HttpStatusCode.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Enums\LogEventType.cs">
+      <Link>Enums\LogEventType.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Enums\MimeParserState.cs">
+      <Link>Enums\MimeParserState.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Enums\RequestParserState.cs">
+      <Link>Enums\RequestParserState.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Helper\NetworkHelper.cs">
+      <Link>Helper\NetworkHelper.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpContext.cs">
+      <Link>HttpContext.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpException.cs">
+      <Link>HttpException.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpHeader.cs">
+      <Link>HttpHeader.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpParameter.cs">
+      <Link>HttpParameter.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpProcessor.cs">
+      <Link>HttpProcessor.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpRequest.cs">
+      <Link>HttpRequest.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpResponse.cs">
+      <Link>HttpResponse.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpServer.cs">
+      <Link>HttpServer.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\HttpServerUtility.cs">
+      <Link>HttpServerUtility.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\IHttpHandler.cs">
+      <Link>IHttpHandler.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\LogAccess.cs">
+      <Link>LogAccess.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\LogAccessEvent.cs">
+      <Link>LogAccessEvent.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Mime\MimeContent.cs">
+      <Link>Mime\MimeContent.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Mime\MimeContentCollection.cs">
+      <Link>Mime\MimeContentCollection.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Mime\MimeContentEnumerator.cs">
+      <Link>Mime\MimeContentEnumerator.cs</Link>
+    </Compile>
+    <Compile Include="..\HTTP\Mime\MimeParser.cs">
+      <Link>Mime\MimeParser.cs</Link>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.SPOT.IO" />
+    <Reference Include="Microsoft.SPOT.Native" />
+    <Reference Include="Microsoft.SPOT.Net" />
+    <Reference Include="Microsoft.SPOT.Net.Security" />
+    <Reference Include="System" />
+    <Reference Include="System.IO" />
+    <Reference Include="System.Net.Security" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MicroIO\MicroIO.csproj">
+      <Project>{A009B2CC-E9A5-4B53-A132-56F25E4D0CB9}</Project>
+      <Name>MicroIO</Name>
+    </ProjectReference>
+  </ItemGroup>
+</Project>

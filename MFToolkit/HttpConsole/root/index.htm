@@ -1,0 +1,41 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+	<head>
+		<title>Demo</title>
+	</head>
+	<body>
+		<h1>Welcome to my .NET Micro Framework web server</h1>
+		<p>This demo server is running on a Tahoe-II board using XBee modules to communicate with XBee sensors from Digi.</p>
+	    <br />
+	    <img src="ms.jpg" alt=""/>
+	    <br />
+	    
+	    <hr size="1" />
+	    <h2>Form Post with File Upload</h2>
+	    <form name="Form1" method="post" action="default.aspx" enctype="multipart/form-data">
+	    	File1: <input name="File1" type="file" /><br />
+	    	TextBox1: <input name="TextBox1" type="text" /><br />
+			<input type="submit" name="Button1" value="Upload file" id="Button1"  />	    
+	    </form>
+	    
+	    <hr size="1" />
+	    <h2>Form Get</h2>
+	    <form name="Form2" method="get" action="default.aspx">
+			TextBox1: <input name="TextBox1" type="text" /><br />
+			TextBox2: <input name="TextBox2" type="text" /><br />
+			RadioTest: <input name="RadioTest" type="radio" value="Value1" /> Value1  <input name="RadioTest" type="radio" value="Value2" checked="checked" /> Value2
+			<input type="submit" value="GET Test" />
+	    </form>
+	    
+	    <hr size="1" />
+	    <h2>Form Post (action includes query string)</h2>
+	    <form name="Form2" method="post" action="default.aspx?query1=hello">
+			TextBox1: <input name="TextBox1" type="text" /><br />
+			TextBox2: <input name="TextBox2" type="text" /><br />
+			<input type="submit" value="GET Test" />
+	    </form>
+	    
+	    <p>Feel free to send me a mail to <a href="mailto:spam-indexhtm@ajaxpro.info">spam-indexhtm@ajaxpro.info</a>.</p>
+	    
+	</body>
+</html>
